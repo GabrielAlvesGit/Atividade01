@@ -1,0 +1,78 @@
+.bloco, .bloco2 { 
+    display: flex;
+    /*background-color: cor do bloco*/
+  background-color: #A6ACAF ;
+  /*Margin: distanciamento do bloco de cima da pagina*/
+  margin: 6px;
+  /*padding: grossura da caixa*/
+  padding: 20px;
+  /*Font-size: Tamanho da fonte "Bloco"*/
+  font-size: 30px;
+  border: 3px solid #000;
+  align-items: center;
+  /*centralizar a fonte*/
+  justify-content: center;
+  /*text-align: center;*/
+}
+
+.coluna{
+    display: flex;
+    /*background-color: cor do bloco*/
+    background-color: #A6ACAF ;
+    /*Margin: distanciamento do bloco de cima da pagina*/
+    margin: 20px;
+    /*height: define a autura da caixa*/
+    height: 300px;
+    /*width: Largura da caixa*/
+    width: 100%;
+    /*margin:Distancia */
+    margin: 1px;
+    /*border:grosura da borda */
+    border: 3px solid #000; 
+    flex-flow: column nowrap;
+    text-align: center;
+    /*height: aumentou os conteiner*/  
+    height: 500px;  
+}
+.linha{
+     /*display: jogar a margem da caixa para o lado*/
+     display:flex;
+     /*flex-flow: determina a row:da esqueda para direita / column: de cima para baixa*/
+    flex-flow:row nowrap;
+    /*Distancia */
+    margin: 5px;
+}
+
+.container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-flow:column nowrap;
+    width: 100%;
+    background-image: linear-gradient( #4A235A ,  #7B241C, #C0392B, #E74C3C ,#F1C40F );
+}
+footer{
+    text-align: center;
+    padding: 5px;
+    /*border:borda da caixa*/
+    border: 3px solid #000;
+    /*margin:borda da caixa*/
+    margin: 6px;
+}
+.imagens{
+    display: flex;
+}
+.texto{
+    display: block;
+    font-family: 'stat', sans-serif;
+    text-align: center;  
+}
+@media(max-width: 1000px) {
+    .linha{
+        display:flex;
+        flex-flow: column nowrap;
+    }   
+    /*p{
+
+    }*/
+}
